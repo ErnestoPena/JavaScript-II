@@ -1,6 +1,17 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function userdata(age) {
+  const my_age = age;
+
+  return function name(name) {
+     return `My name is ${name} and I am ${age} years old`;
+  }
+}
+
+const marie = new userdata(41);
+
+console.log(marie('Ernesto'));
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
